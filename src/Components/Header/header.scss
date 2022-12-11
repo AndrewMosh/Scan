@@ -1,0 +1,48 @@
+$footer: #029491;
+$current: #ffb64f;
+$pro: #7ce3e1;
+$button: #5970ff;
+$title: "Ferry";
+$plain: "Inter";
+
+header {
+  height: 93px;
+  font-size: 14px;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    gap: 150px;
+    .nav {
+      display: flex;
+      div {
+        padding: 0 20px;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      div {
+        padding: 4px 20px;
+      }
+      div:nth-of-type(1) {
+        border-right: 3px solid #7ce3e1;
+        color: grey;
+      }
+
+      .mock {
+        visibility: hidden;
+      }
+      button {
+        background-color: $pro;
+        height: 26px;
+        width: 65px;
+        border: none;
+        margin: 15px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
