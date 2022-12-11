@@ -8,15 +8,19 @@ $plain: "Inter";
 header {
   height: 93px;
   font-size: 14px;
-
+  margin: 0 auto;
+  max-width: 1440px;
   nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 1440px;
-    gap: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 0 50px;
     .nav {
       display: flex;
+      width: 300px;
+      justify-content: center;
+      align-items: center;
+      justify-self: center;
       div {
         padding: 0 20px;
       }
@@ -24,16 +28,14 @@ header {
     .menu {
       display: flex;
       align-items: center;
+      justify-content: flex-end;
+
       div {
         padding: 4px 20px;
       }
       div:nth-of-type(1) {
-        border-right: 3px solid #7ce3e1;
+        border-right: 2px solid #7ce3e1;
         color: grey;
-      }
-
-      .mock {
-        visibility: hidden;
       }
       button {
         background-color: $pro;
