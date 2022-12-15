@@ -1,27 +1,30 @@
 .auth_container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
   .auth_container_content {
     display: flex;
     margin: 30px 110px;
+
     .auth_left {
       h2 {
         margin: 0;
+        text-transform: uppercase;
+        padding-right: 50px;
       }
       img {
         margin: 20px 0 0 30px;
-        padding: 30px 50px;
+        padding: 30px 0 0 50px;
       }
       width: 57%;
       text-align: left;
-      font-size: 23px;
+      font-size: 25px;
     }
     .auth_right {
-      width: 28%;
       display: flex;
+      max-width: 400px;
       .auth_form {
         .auth_form_lock {
-          max-width: 15%;
+          max-width: 20%;
           position: absolute;
           top: -45px;
           left: -45px;
@@ -47,7 +50,7 @@
           margin-bottom: 20px;
         }
         input {
-          width: 369px;
+          width: 374px;
           height: 43px;
           border: 1px solid #c7c7c7;
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -60,7 +63,6 @@
         border-radius: 10px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         padding: 30px;
-        justify-content: flex-start;
         position: relative;
         .auth_form_enter {
           display: flex;
