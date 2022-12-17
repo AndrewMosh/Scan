@@ -1,7 +1,5 @@
-$footer: #029491;
 $current: #ffb64f;
 $pro: #7ce3e1;
-$button: #5970ff;
 $title: "Ferry";
 $plain: "Inter";
 
@@ -14,7 +12,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    margin: 0 100px;
+    margin: 0 60px;
     .nav {
       display: flex;
       width: 300px;

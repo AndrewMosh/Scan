@@ -1,0 +1,19 @@
+$footer: #029491;
+footer {
+  background-color: $footer;
+  .footer_container {
+    margin: 0 auto;
+    max-width: 1440px;
+    .footer_container_content {
+      display: flex;
+
+      justify-content: space-between;
+      margin: 0 70px;
+      align-items: center;
+      address {
+        color: white;
+        text-align: right;
+      }
+    }
+  }
+}
