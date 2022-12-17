@@ -8,7 +8,7 @@ import slide3 from "../assets/ic3.svg";
 
 export const Slider = () => {
   return (
-    <div style={{ margin: "100px auto", maxWidth: "1440px" }}>
+    <div style={{ margin: "100px auto 50px auto", maxWidth: "1440px" }}>
       <div className="slider">
         <h1>Почему именно мы</h1>
         <Swiper

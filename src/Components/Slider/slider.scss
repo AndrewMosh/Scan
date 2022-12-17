@@ -1,6 +1,7 @@
 .slider {
-  margin: 0 75px;
+  margin: 0 65px;
   position: relative;
+  max-width: 90%;
 
   h1 {
     text-align: left;
@@ -10,13 +11,14 @@
     position: static;
 
     .swiper-wrapper {
+      margin-left: 10px;
       .swiper-slide {
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         height: 205px;
-        max-width: 355px;
-        margin: 15px;
-        padding: 20px;
+        max-width: 356px;
+        margin: 20px;
+        padding: 15px;
 
         div {
           text-align: left;
@@ -34,7 +36,7 @@
   color: rgba(119, 117, 117, 0.484) !important;
   transform: scale(0.7);
   top: 62% !important;
-  right: -30px !important;
+  right: -40px !important;
   font-weight: bold;
 }
 .swiper-button-prev {

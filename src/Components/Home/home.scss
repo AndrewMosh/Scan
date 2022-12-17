@@ -1,32 +1,41 @@
 $button: #5970ff;
-.home_container {
-  display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
-  img {
-    margin-right: 70px;
+
+.home {
+  .home_container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    img {
+      margin-right: 70px;
+    }
+    .home_container_left {
+      text-align: left;
+      margin-left: 70px;
+      h2 {
+        font-size: 60px;
+        text-transform: uppercase;
+      }
+      button {
+        color: white;
+        background-color: $button;
+        width: 335px;
+        height: 59px;
+        border: none;
+        border-radius: 5px;
+        font-size: 22px;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 20px;
+        max-width: 520px;
+        line-height: 24.2px;
+      }
+    }
   }
-  .home_container_left {
-    text-align: left;
-    margin-left: 70px;
-    h2 {
-      font-size: 60px;
-      text-transform: uppercase;
-    }
-    button {
-      color: white;
-      background-color: $button;
-      width: 335px;
-      height: 59px;
-      border: none;
-      border-radius: 5px;
-      font-size: 22px;
-      margin-top: 20px;
-    }
-    p {
-      font-size: 20px;
-      max-width: 520px;
-      line-height: 24.2px;
-    }
+  .blobs {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 }
