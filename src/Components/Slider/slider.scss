@@ -1,24 +1,23 @@
 .slider {
-  margin: 0 65px;
   position: relative;
-  max-width: 90%;
+  max-width: 1425px;
 
   h1 {
     text-align: left;
     font-size: 45px;
+    margin: 50px 80px;
   }
   .swiper {
     position: static;
-
+    margin: 0 104px;
     .swiper-wrapper {
-      margin-left: 10px;
       .swiper-slide {
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         height: 205px;
         max-width: 356px;
-        margin: 20px;
-        padding: 15px;
+        margin: 15px;
+        padding: 10px;
 
         div {
           text-align: left;
@@ -26,7 +25,7 @@
         }
         p {
           text-align: left;
-          padding: 10px;
+          padding: 0 10px 30px 20px;
         }
       }
     }
@@ -36,13 +35,13 @@
   color: rgba(119, 117, 117, 0.484) !important;
   transform: scale(0.7);
   top: 62% !important;
-  right: -40px !important;
+  right: 80px !important;
   font-weight: bold;
 }
 .swiper-button-prev {
   color: rgba(119, 117, 117, 0.484) !important;
   transform: scale(0.7);
   top: 62% !important;
-  left: -30px !important;
+  left: 80px !important;
   font-weight: bold;
 }
