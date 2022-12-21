@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import tick from "../assets/tick.svg";
 import blobs from "../assets/blobs.svg";
+import { Tariffs } from "../Tariffs/Tariffs";
 
 const Home = () => {
   return (
@@ -26,13 +27,14 @@ const Home = () => {
       </div>
       <Slider />
       <div className="blobs">
-        <div style={{ marginLeft: "70px" }}>
+        <div style={{ marginLeft: "100px" }}>
           <img src={tick} alt="" />
         </div>
-        <div style={{ marginRight: "70px" }}>
+        <div style={{ marginRight: "120px" }}>
           <img src={blobs} alt="" />
         </div>
       </div>
+      <Tariffs />
     </div>
   );
 };

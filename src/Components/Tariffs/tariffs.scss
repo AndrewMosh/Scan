@@ -1,0 +1,108 @@
+$current: #ffb64f;
+$pro: #7ce3e1;
+$button: #5970ff;
+.tariffs {
+  h1 {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+  max-width: 1440px;
+  margin: 80px auto;
+  .tariffs_container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .tariffs_container_item {
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    .tariffs_container_item_top {
+      border-radius: 10px 10px 0px 0px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        display: flex;
+        width: 410px;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+          margin: 0;
+          text-align: left;
+          padding-left: 20px;
+          span {
+            font-size: 30px;
+            line-height: 46px;
+          }
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .tariffs_container_item_info {
+      button {
+        border: none;
+        margin: 40px 0 20px 0;
+        height: 45px;
+        width: 305px;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+      div {
+        height: 110px;
+        text-align: left;
+        padding: 20px 0 0 40px;
+        p:nth-child(1) {
+          font-weight: bold;
+          font-size: 20px;
+          span {
+            padding-left: 20px;
+            text-decoration: line-through;
+            color: grey;
+            font-weight: 400;
+            font-size: 18px;
+          }
+        }
+      }
+      ul {
+        span {
+          font-weight: 600;
+        }
+        text-align: left;
+        line-height: 30px;
+      }
+      ul li {
+        list-style-image: url(../assets/tick2.svg);
+        margin-left: 30px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.current {
+  background-color: $current;
+}
+.current_border {
+  border: 2px solid $current;
+}
+.pro {
+  background-color: $pro;
+}
+.business {
+  background-color: black;
+  color: white;
+}
+.current_button {
+  background-color: #d2d2d2;
+}
+.tariff_button {
+  background-color: $button;
+  color: white;
+}
