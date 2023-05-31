@@ -6,36 +6,31 @@ import fb from "../assets/facebook.svg";
 import ya from "../assets/ya.svg";
 import "./auth.scss";
 import { useState } from "react";
-import axios from "axios";
-
-const Auth = ({ data, setData }) => {
+import { signin } from "../../store/authSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+const Auth = () => {
+  const dispatch = useDispatch();
+  const { error } = useSelector((state) => state.auth);
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
-
+  const [message, setMessage] = useState("");
+  const nav = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post(
-        "https://gateway.scan-interfax.ru/api/v1/account/login",
-        { login, password },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + localStorage.getItem("token"),
-          },
-        }
-      )
-
-      .then((response) => {
-        console.log(response);
-        localStorage.setItem("token", response.data.data.token);
-        setData(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    dispatch(signin({ login, password }));
+    if (error !== null) {
+      setLogin("");
+      setPassword("");
+      nav("/");
+    } else {
+      setLogin("");
+      setPassword("");
+      setMessage("Неверный логин или пароль");
+    }
   };
-
+  //sf_student10KHKfTXb
   return (
     <div className="auth_container">
       <div className="auth_container_content">
@@ -63,6 +58,7 @@ const Auth = ({ data, setData }) => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <button>Войти</button>
+            <p>{message}</p>
             <a href="">Восстановить пароль</a>
             <label>Войти через:</label>
             <div className="auth_form_social">
